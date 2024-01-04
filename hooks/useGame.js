@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-import { updateDb } from "../firebaseService";
+import { updateDb } from "../services/firebaseService";
 import { getDatabase, ref, onValue } from "firebase/database";
 import { firebase } from "../firebaseConfig";
-import { checkWinner } from "../gameService";
+import { checkWinner } from "../services/gameService";
 
 const emptyGameState = {
   gameBoardState: Array(3).fill(Array(3).fill("N")),

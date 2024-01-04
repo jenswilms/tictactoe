@@ -1,4 +1,4 @@
-import { store, retrieve, updateDb, db } from "./firebaseService";
+import { store, retrieve, db } from "./firebaseService";
 import { ref, onValue } from "firebase/database";
 
 const generateGameCode = () => {
