@@ -1,15 +1,24 @@
-import { initializeApp } from 'firebase/app';
+import { initializeApp } from "firebase/app";
+
+import {
+  REACT_APP_API_KEY,
+  REACT_APP_AUTH_DOMAIN,
+  REACT_APP_PROJECT_ID,
+  REACT_APP_STORAGE_BUCKET,
+  REACT_APP_MESSAGING_SENDER_ID,
+  REACT_APP_APP_ID,
+  REACT_APP_DATABASE_URL,
+} from "@env";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBPClRfVafHBPSnAXOxa3TR5bMg9D9OU9E",
-    authDomain: "learnxyz-test.firebaseapp.com",
-    projectId: "learnxyz-test",
-    storageBucket: "learnxyz-test.appspot.com",
-    messagingSenderId: "333898715869",
-    appId: "1:333898715869:web:e3b2c69daa0d1b968d8134",
-    databaseURL: "https://learnxyz-test-default-rtdb.firebaseio.com/"
-  };
+  apiKey: REACT_APP_API_KEY,
+  authDomain: REACT_APP_AUTH_DOMAIN,
+  projectId: REACT_APP_PROJECT_ID,
+  storageBucket: REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: REACT_APP_MESSAGING_SENDER_ID,
+  appId: REACT_APP_APP_ID,
+  databaseURL: REACT_APP_DATABASE_URL,
+};
 
-
-const firebase =  initializeApp(firebaseConfig);
-export default firebase
+const firebase = initializeApp(firebaseConfig);
+export default firebase;

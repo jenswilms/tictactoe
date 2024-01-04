@@ -1,7 +1,7 @@
-import { getDatabase, ref, set, get, update } from "firebase/database";
-import {firebase} from './firebaseConfig'
+import { getDatabase, ref, set, get, update, onValue } from "firebase/database";
+import { firebase } from "./firebaseConfig";
 
-const db = getDatabase(firebase);
+export const db = getDatabase(firebase);
 
 export const store = async (path, data) => {
   await set(ref(db, path), data);
