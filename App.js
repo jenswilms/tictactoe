@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { StyleSheet, Button, View } from "react-native";
 import Game from "./components/Game";
 import Menu from "./components/Menu";
-import { createGame, joinGame } from "./gameService";
+import { createGame, joinGame } from "./services/gameService";
 
 export default function App() {
   const [menuShown, setMenuShown] = useState(true);
