@@ -29,3 +29,9 @@ The Game component displays the game board and game state. It uses the useGame h
 ## Running the Game
 
 The game can be run on different platforms using the scripts defined in package.json. For example, to start the game on an Android device, you would run npm run android.
+
+```
+npm i
+npm run ios
+```
+
